@@ -42,19 +42,9 @@ echo sucessfully compiled Kernaline os code.
 echo =====================================
 echo now deleting unneeded os files....
 
-
-rm /root/BOOTSECTION.asm
-rm /root/kernel/Diskmanage.h
-rm /root/kernel/Diskmanage_code.c
-rm /root/kernel/Intterupt.h
-rm /root/kernel/Interrupt_code.c
-rm /root/kernel/Memcall.h
-rm /root/kernel/Memcall_code.c
-rm /root/kernel/Panic.c
-rm /root/kernel/Process_scheduler.c
-rm /root/kernel/Krnlcall.c
-rm /root/kernel/VGAcontrol.asm
-rm /root/Commandprompt.c
+rm *.c
+rm *.h
+rm *.asm
 
 
 mv /root/Diskmanage.bin /root/kernel
