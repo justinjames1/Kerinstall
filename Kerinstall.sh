@@ -33,7 +33,7 @@ cc /root/kernel/Krnlcall.c -o Krnlcall.bin
 cat /root/kernel/Krnlcall.bin
 nasm -f bin /root/kernel/VGAcontrol.asm -o VGAcontrol.bin
 cat /root/kernel/VGAcontrol.bin
-cc Commandprompt.c -o Commandprompt.bin
+cc /root/Commandprompt.c -o Commandprompt.bin
 
 mv kernel/* .
 
@@ -54,7 +54,7 @@ rm /root/kernel/Panic.c
 rm /root/kernel/Process_scheduler.c
 rm /root/kernel/Krnlcall.c
 rm /root/kernel/VGAcontrol.asm
-rm Commandprompt.c
+rm /root/Commandprompt.c
 
 
 mv /root/Diskmanage.bin /root/kernel
