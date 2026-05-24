@@ -12,7 +12,7 @@ mv KERALINE-OS/* .
 echo comepleted preping files for compilation.
 
 nasm -f bin BOOTSECTION.asm -o BOOTSECTION.bin
-#cat BOOTSECTION.bin
+cat BOOTSECTION.bin
 cc /root/kernel/Diskmanage.h -o Diskmanage.bin
 #cat /root/kernel/Diskmanage.bin
 cc /root/kernel/Diskmanage_code.c -o Diskmanage_code.bin
