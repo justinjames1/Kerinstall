@@ -13,26 +13,26 @@ echo comepleted preping files for compilation.
 
 nasm -f bin BOOTSECTION.asm -o BOOTSECTION.bin
 cat BOOTSECTION.bin
-cc /root/kernel/Diskmanage.h -o Diskmanage.bin
-cat /root/kernel/Diskmanage.bin
-cc /root/kernel/Diskmanage_code.c -o Diskmanage_code.bin
-cat /root/kernel/Diskmanage_code.bin
-cc /root/kernel/Intterupt.h -o Intterupt.bin
-cat /root/kernel/Interrupt.bin
-cc /root/kernel/Interrupt_code.c -o Interrupt_code.bin
-cat /root/kernel/Interrupt_code.bin
-cc /root/kernel/Memcall.h -o Memcall.bin
-cat /root/kernel/Memcall.bin
-cc /root/kernel/Memcall_code.c -o Memcall_code.bin
-cat /root/kernel/Memcall_code.bin
-cc /root/kernel/Panic.c -o Panic.bin
-cat /root/kernel/Panic.bin
-cc /root/kernel/Process_scheduler.c -o Process_scheduler.bin
-cat /root/kernel/Process_scheduler.bin
-cc /root/kernel/Krnlcall.c -o Krnlcall.bin
-cat /root/kernel/Krnlcall.bin
-nasm -f bin /root/kernel/VGAcontrol.asm -o VGAcontrol.bin
-cat /root/kernel/VGAcontrol.bin
+cc root/kernel/Diskmanage.h -o Diskmanage.bin
+cat root/kernel/Diskmanage.bin
+cc root/kernel/Diskmanage_code.c -o Diskmanage_code.bin
+cat root/kernel/Diskmanage_code.bin
+cc root/kernel/Intterupt.h -o Intterupt.bin
+cat root/kernel/Interrupt.bin
+cc root/kernel/Interrupt_code.c -o Interrupt_code.bin
+cat root/kernel/Interrupt_code.bin
+cc root/kernel/Memcall.h -o Memcall.bin
+cat root/kernel/Memcall.bin
+cc root/kernel/Memcall_code.c -o Memcall_code.bin
+cat root/kernel/Memcall_code.bin
+cc root/kernel/Panic.c -o Panic.bin
+cat root/kernel/Panic.bin
+cc root/kernel/Process_scheduler.c -o Process_scheduler.bin
+cat root/kernel/Process_scheduler.bin
+cc root/kernel/Krnlcall.c -o Krnlcall.bin
+cat root/kernel/Krnlcall.bin
+nasm -f bin root/kernel/VGAcontrol.asm -o VGAcontrol.bin
+cat root/kernel/VGAcontrol.bin
 cc Commandprompt.c -o Commandprompt.bin
 
 mv kernel/* .
