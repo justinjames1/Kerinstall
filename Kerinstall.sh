@@ -32,7 +32,7 @@ cc /root/kernel/Process_scheduler.c -o Process_scheduler.bin
 cc /root/kernel/Krnlcall.c -o Krnlcall.bin
 #cat /root/kernel/Krnlcall.bin
 nasm -f bin /root/kernel/VGAcontrol.asm -o VGAcontrol.bin
-cat /root/kernel/VGAcontrol.bin
+#cat /root/kernel/VGAcontrol.bin
 cc /root/Commandprompt.c -o Commandprompt.bin
 
 mv kernel/* .
@@ -49,7 +49,7 @@ rm *.asm
 
 mv Diskmanage.bin /root/kernel
 mv Diskmanage_code.bin /root/kernel
-mv Intterupt.bin /root/kernel
+mv Interrupt.bin /root/kernel
 mv Interrupt_code.bin /root/kernel
 mv Memcall.bin /root/kernel
 mv Memcall_code.bin /root/kernel
