@@ -17,7 +17,7 @@ cc /root/kernel/Diskmanage.h -o Diskmanage.bin
 cat /root/kernel/Diskmanage.bin
 cc /root/kernel/Diskmanage_code.c -o Diskmanage_code.bin
 cat /root/kernel/Diskmanage_code.bin
-cc /root/kernel/Intterupt.h -o Intterupt.bin
+cc /root/kernel/Interrupt.h -o Interrupt.bin
 cat /root/kernel/Interrupt.bin
 cc /root/kernel/Interrupt_code.c -o Interrupt_code.bin
 cat /root/kernel/Interrupt_code.bin
