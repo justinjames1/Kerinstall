@@ -47,15 +47,15 @@ rm *.h
 rm *.asm
 
 
-mv /root/Diskmanage.bin /root/kernel
-mv /root/Diskmanage_code.bin /root/kernel
-mv /root/Intterupt.bin /root/kernel
-mv /root/Interrupt_code.bin /root/kernel
-mv /root/Memcall.bin /root/kernel
-mv /root/Memcall_code.bin /root/kernel
-mv /root/Panic.bin /root/kernel
-mv /root/Process_scheduler.bin /root/kernel
-mv /root/Krnlcall.bin /root/kernel
+mv Diskmanage.bin /root/kernel
+mv Diskmanage_code.bin /root/kernel
+mv Intterupt.bin /root/kernel
+mv Interrupt_code.bin /root/kernel
+mv Memcall.bin /root/kernel
+mv Memcall_code.bin /root/kernel
+mv Panic.bin /root/kernel
+mv Process_scheduler.bin /root/kernel
+mv Krnlcall.bin /root/kernel
 
 
 echo =====================================
