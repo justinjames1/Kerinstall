@@ -31,7 +31,6 @@ nasm -f bin /root/kernel/VGAcontrol.asm -o VGAcontrol.bin
 #cat /kernel/VGAcontrol.bin
 cc /root/Commandprompt.c -o Commandprompt.bin
 #cat root/Commandprompt.bin
-mv kernel/* .
 echo [if it says error with cat thats fine.]
 echo =====================================
 echo sucessfully compiled Kernaline os code.
