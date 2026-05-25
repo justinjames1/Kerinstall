@@ -13,28 +13,24 @@ echo comepleted preping files for compilation.
 
 nasm -f bin BOOTSECTION.asm -o BOOTSECTION.bin
 cat BOOTSECTION.bin
-cc /root/kernel/Diskmanage.h -o Diskmanage.bin
-cat /kernel/Diskmanage.bin
-cc /root/kernel/Diskmanage_code.c -o Diskmanage_code.bin
-cat /kernel/Diskmanage_code.bin
-cc /root/kernel/Interrupt.h -o Interrupt.bin
-cat /kernel/Interrupt.bin
-cc /root/kernel/Interrupt_code.c -o Interrupt_code.bin
-cat /kernel/Interrupt_code.bin
-cc /root/kernel/Memcall.h -o Memcall.bin
-cat /kernel/Memcall.bin
-cc /root/kernel/Memcall_code.c -o Memcall_code.bin
-cat /kernel/Memcall_code.bin
-cc /root/kernel/Panic.c -o Panic.bin
-cat /kernel/Panic.bin
-cc /root/kernel/Process_scheduler.c -o Process_scheduler.bin
-cat /kernel/Process_scheduler.bin
-cc /root/kernel/Krnlcall.c -o Krnlcall.bin
-cat /kernel/Krnlcall.bin
+cc /root/kernel/Disk/Diskmanage.h -o Diskmanage.bin
+#cat /kernel/Disk/Diskmanage.bin
+cc /root/kernel/Disk/Diskmanage_code.c -o Diskmanage_code.bin
+#cat /kernel/Disk/Diskmanage_code.bin
+cc /root/kernel/CPU/Interrupt.h -o Interrupt.bin
+#cat /kernel/Interrupt.bin
+cc /root/kernel/CPU/Interrupt_code.c -o Interrupt_code.bin
+#cat /kernel/Interrupt_code.bin
+cc /root/kernel/Memory/Memcall.h -o Memcall.bin
+#cat /kernel/Memcall.bin
+cc /root/kernel/Memory/Memcall_code.c -o Memcall_code.bin
+#cat /kernel/Memcall_code.bin
+cc /root/kernel/Kernel_panic.c -o Kernel_panic.bin
+#cat /kernel/Panic.bin
 nasm -f bin /root/kernel/VGAcontrol.asm -o VGAcontrol.bin
-cat /kernel/VGAcontrol.bin
+#cat /kernel/VGAcontrol.bin
 cc /root/Commandprompt.c -o Commandprompt.bin
-cat root/Commandprompt.bin
+#cat root/Commandprompt.bin
 mv kernel/* .
 echo [if it says error with cat thats fine.]
 echo =====================================
