@@ -6,7 +6,7 @@ git clone https://github.com/justindude057-collab/KERALINE-OS.git
 apk add unzip
 apk add nasm
 apk add gcc
-apk add build-base musl-dev libc-dev
+apk add build-base musl-dev libc-dev #the compiler fucking broke without this.
 echo preparing files for compileing.....
 mv KERALINE-OS/* .
 
