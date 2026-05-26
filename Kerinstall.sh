@@ -26,7 +26,7 @@ cc /root/kernel/Memory/Memcall.h -o Memcall.bin
 #cat /kernel/Memcall.bin
 cc /root/kernel/Memory/Memcall_code.c -o Memcall_code.bin
 #cat /kernel/Memcall_code.bin
-cc /root/kernel/Kernel_panic.c -o Kernel_panic.bin
+cc /root/kernel/Panic/kernel_panic.c -o kernel_panic.bin
 #cat /kernel/Panic.bin
 nasm -f bin /root/kernel/VGAcontrol.asm -o VGAcontrol.bin
 #cat /kernel/VGAcontrol.bin
