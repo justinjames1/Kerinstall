@@ -19,23 +19,41 @@ cc bootloader/Kernel_jmp.c -o Kernel_jmp.c
 cat bootloader/Kernel_jmp.c
 
 cc /root/kernel/Disk/Diskmanage.h -o Diskmanage.bin
-#cat /kernel/Disk/Diskmanage.bin
+
+cat /root/kernel/Disk/Diskmanage.bin
+
 cc /root/kernel/Disk/Diskmanage_code.c -o Diskmanage_code.bin
-#cat /kernel/Disk/Diskmanage_code.bin
+
+cat /root/kernel/Disk/Diskmanage_code.bin
+
 cc /root/kernel/CPU/Interrupt.h -o Interrupt.bin
-#cat /kernel/Interrupt.bin
+
+cat /root/kernel/CPU/Interrupt.bin
+
 cc /root/kernel/CPU/Interrupt_code.c -o Interrupt_code.bin
-#cat /kernel/Interrupt_code.bin
+
+cat /root/kernel/CPU/Interrupt_code.bin
+
 cc /root/kernel/Memory/Memcall.h -o Memcall.bin
-#cat /kernel/Memcall.bin
+
+cat /root/kernel/Memory/Memcall.bin
+
 cc /root/kernel/Memory/Memcall_code.c -o Memcall_code.bin
-#cat /kernel/Memcall_code.bin
+
+cat /root/kernel/Memory/Memcall_code.bin
+
 cc /root/kernel/Panic/kernel_panic.c -o kernel_panic.bin
-#cat /kernel/Panic.bin
+
+cat /root/kernel/Panic/kernel_panic.bin
+
 nasm -f bin /root/kernel/VGAcontrol.asm -o VGAcontrol.bin
-#cat /kernel/VGAcontrol.bin
+
+cat /root/kernel/VGAcontrol.bin
+
 cc /root/Commandprompt.c -o Commandprompt.bin
-#cat root/Commandprompt.bin
+
+cat /root/Commandprompt.bin
+
 echo [if it says error with cat thats fine.]
 echo =====================================
 echo sucessfully compiled Kernaline os code.
