@@ -14,6 +14,10 @@ echo comepleted preping files for compilation.
 
 nasm -f bin bootloader/BOOTSECTION.asm -o BOOTSECTION.bin
 cat BOOTSECTION.bin
+
+cc bootloader/Kernel_jmp.c -o Kernel_jmp.c
+cat bootloader/Kernel_jmp.c
+
 cc /root/kernel/Disk/Diskmanage.h -o Diskmanage.bin
 #cat /kernel/Disk/Diskmanage.bin
 cc /root/kernel/Disk/Diskmanage_code.c -o Diskmanage_code.bin
