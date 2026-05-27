@@ -13,44 +13,39 @@ mv KERALINE-OS/* .
 echo comepleted preping files for compilation.
 
 nasm -f bin bootloader/BOOTSECTION.asm -o BOOTSECTION.bin
-
-
 cc bootloader/Kernel_jmp.c -o Kernel_jmp.c
 
+cc kernel/CPU/Interrupt.h -o kernel/CPU/Interrupt.bin
 
-cc /root/kernel/Disk/Diskmanage.h -o Diskmanage.bin
+cc kernel/CPU/Interrupt_code.c -o kernel/CPU/Interrupt_code.bin
 
+cc kernel/CPU/Sleep.c -o kernel/CPU/Sleep.bin
 
+cc kernel/Crash_handler/Memory_crash.c -o kernel/Crash_handler/Memory_crash.bin
 
-cc /root/kernel/Disk/Diskmanage_code.c -o Diskmanage_code.bin
+cc kernel/Disk/Diskmanage.h -o kernel/Disk/Diskmanage.bin
 
+cc kernel/Disk/Diskmanage_code.c -o kernel/Disk/Diskmanage_code.bin
 
+cc kernel/IPC/IPC.c -o kernel/IPC/IPC.bin
 
-cc /root/kernel/CPU/Interrupt.h -o Interrupt.bin
+cc kernel/Krnlcall/Disk_call.c -o kernel/Krnlcall/Disk_call.bin
 
+cc kernel/Krnlcall/Interrupt_call.c -o kernel/Krnlcall/Interrupt_call.bin
 
+cc kernel/Memory/Memcall.h -o kernel/Memory/Memcall.bin
 
-cc /root/kernel/CPU/Interrupt_code.c -o Interrupt_code.bin
+cc kernel/Memory/Memcall_code.c -o kernel/Memory/Memcall_code.bin
 
+cc kernel/Panic/kernel_panic.c -o kernel/Panic/kernel_panic.bin
 
-cc /root/kernel/Memory/Memcall.h -o Memcall.bin
+cc kernel/Process_scheduler/Pid_manage.h -o kernel/Process_scheduler/Pid_manage.bin
 
+cc kernel/Process_scheduler/Pid_manage_code.c -o kernel/Process_scheduler/Pid_manage_code.bin
 
+cc kernel/KBJ.c -o kernel/KBJ.bin
 
-cc /root/kernel/Memory/Memcall_code.c -o Memcall_code.bin
-
-
-
-cc /root/kernel/Panic/kernel_panic.c -o kernel_panic.bin
-
-
-
-nasm -f bin /root/kernel/VGAcontrol.asm -o VGAcontrol.bin
-
-
-
-cc /root/Commandprompt.c -o Commandprompt.bin
-
+nasm -f bin kernel/VGAcontrol.asm -o kernel/VGAcontrol.bin
 
 
 echo [if it says error with cat thats fine.]
