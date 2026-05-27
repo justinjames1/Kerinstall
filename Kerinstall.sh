@@ -2,7 +2,7 @@ echo =====================================
 echo starting kernaline os compilation....
 echo =====================================
 echo installing kernaline os files please wait...
-git clone https://github.com/justindude057-collab/KERALINE-OS.git
+git clone https://github.com/justinjames1/KERALINE-OS.git
 apk add unzip
 apk add nasm
 apk add gcc
