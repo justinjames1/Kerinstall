@@ -60,5 +60,5 @@ rm -rf *.asm
 
 
 echo =====================================
-echo sucessfully completed installation.
+echo successfully completed installation.
 echo =====================================
