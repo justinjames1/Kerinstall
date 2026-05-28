@@ -8,7 +8,7 @@ sudo apt install nasm
 sudo apt install gcc
 sudo apt install build-base musl-dev libc-dev #the compiler fucking broke without this.
 echo preparing files for compiling.....
-move KERALINE-OS/* .
+mv KERALINE-OS/* .
 
 echo completed preping files for compilation.
 
