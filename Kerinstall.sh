@@ -2,6 +2,7 @@ echo =====================================
 echo starting kernaline os compilation....
 echo =====================================
 echo installing kernaline os files please wait...
+sudo apt git
 git clone https://github.com/justinjames1/KERALINE-OS.git
 sudo apt install unzip
 sudo apt install nasm
