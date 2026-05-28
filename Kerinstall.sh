@@ -54,10 +54,7 @@ echo sucessfully compiled Kernaline os code.
 echo =====================================
 echo now deleting unneeded os files....
 
-rm -rf *.c
-rm -rf *.h
-rm -rf *.asm
-
+\
 
 echo =====================================
 echo successfully completed installation.
