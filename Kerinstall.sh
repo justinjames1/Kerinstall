@@ -14,6 +14,8 @@ mv KERALINE-OS/* .
 echo comepleted preping files for compilation.
 
 nasm -f bin bootloader/BOOTSECTION.asm -o BOOTSECTION.bin
+truncate BOOTSECTION.bin -s 512
+
 cc bootloader/Kernel_jmp.c -o Kernel_jmp.c
 
 cc kernel/CPU/Interrupt.h -o kernel/CPU/Interrupt.bin
