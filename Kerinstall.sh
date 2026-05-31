@@ -16,7 +16,7 @@ echo comepleted preping files for compilation.
 nasm -f bin bootloader/BOOTSECTION.asm -o BOOTSECTION.bin
 truncate BOOTSECTION.bin -s 512
 
-cc bootloader/Kernel_jmp.c -o Kernel_jmp.c
+cc bootloader/Kernel_jmp.c -o Kernel_jmp.bin
 
 cc kernel/CPU/Interrupt.h -o kernel/CPU/Interrupt.bin
 
@@ -56,10 +56,42 @@ echo =====================================
 echo sucessfully compiled Kernaline os code.
 echo =====================================
 echo now deleting unneeded os files....
+rm bootloader/BOOTSECTION.asm
 
-rm *.c
-rm *.h
-rm *.asm
+rm bootloader/Kernel_jmp.c
+
+rm kernel/CPU/Interrupt.h 
+
+rm kernel/CPU/Interrupt_code.c 
+
+rm kernel/CPU/Sleep.c 
+
+rm  kernel/Crash_handler/Memory_crash.c 
+
+rm  kernel/Disk/Diskmanage.h 
+
+rm  kernel/Disk/Diskmanage_code.c 
+
+rm kernel/IPC/IPC.c 
+
+rm  kernel/Krnlcall/Disk_call.c 
+
+rm  kernel/Krnlcall/Interrupt_call.c 
+
+rm kernel/Memory/Memcall.h 
+
+rm kernel/Memory/Memcall_code.c 
+
+rm kernel/Panic/kernel_panic.c 
+
+rm kernel/Process_scheduler/Pid_manage.h 
+
+rm kernel/Process_scheduler/Pid_manage_code.c 
+
+rm kernel/KBJ.c 
+
+rm kernel/VGAcontrol.asm
+
 
 
 echo =====================================
